@@ -308,6 +308,7 @@ app:
       version_sort: バージョンによるソート
       visible: 見える
       z_offset: Zオフセット
+      y_offset: Yオフセット
     msg:
       bed_screws_adjust: >-
         現在のネジで大幅な調整が必要な場合は、 <b>調整済み</b> をクリックします。そうでない場合は、 <b>同意する</b>

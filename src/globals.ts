@@ -412,6 +412,7 @@ export const Waits = Object.freeze({
   onSetOutputPin: 'onSetOutputPin',
   onZAdjust: 'onZAdjust',
   onZApply: 'onZApply',
+  onYAdjust: 'onYAdjust',
   onSaveConfig: 'onSaveConfig',
   onRetract: 'onRetract',
   onExtrude: 'onExtrude',

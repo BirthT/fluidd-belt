@@ -10,13 +10,13 @@
         <v-col class="controls-wrapper">
           <extruder-selection v-if="multipleExtruders" />
           <toolhead-moves v-if="!printerPrinting" />
-          <z-height-adjust v-if="printerPrinting" />
+          <y-height-adjust v-if="printerPrinting" />
         </v-col>
 
         <v-col class="controls-wrapper">
           <toolhead-position />
           <extruder-moves v-if="!printerPrinting" />
-          <z-height-adjust v-if="!printerPrinting" />
+          <y-height-adjust v-if="!printerPrinting" />
         </v-col>
       </v-row>
     </v-card-text>
@@ -45,7 +45,7 @@ import ToolheadMoves from './ToolheadMoves.vue'
 import ExtruderMoves from './ExtruderMoves.vue'
 import ExtruderSelection from './ExtruderSelection.vue'
 import ToolheadPosition from './ToolheadPosition.vue'
-import ZHeightAdjust from './ZHeightAdjust.vue'
+import YHeightAdjust from './YHeightAdjust.vue'
 import SpeedAndFlowAdjust from './SpeedAndFlowAdjust.vue'
 import PressureAdvanceAdjust from './PressureAdvanceAdjust.vue'
 import ExtruderStats from './ExtruderStats.vue'
@@ -59,7 +59,7 @@ import { Extruder } from '@/store/printer/types'
     ExtruderMoves,
     ExtruderSelection,
     ToolheadPosition,
-    ZHeightAdjust,
+    YHeightAdjust,
     SpeedAndFlowAdjust,
     PressureAdvanceAdjust,
     ExtruderStats,
